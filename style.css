@@ -1,0 +1,33 @@
+body {
+    background: rgb(211, 211, 211);
+    width: 1080px;
+    margin: 0 auto;
+}
+h1 {
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: #441133;
+}
+a:hover {
+    text-decoration: underline;
+    color: #421f96;
+}
+h2 {
+    background: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+
+}
