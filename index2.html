@@ -1,114 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex menu</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        div.nav-1 ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 12px auto;
-            text-align: center;
-        }
-        div.nav-1 ul li {
-            display: inline-block;
-        }
-        div.nav-1 ul li a {
-            text-decoration: none;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: 15px;
-        }
-
-        /**************shapka**************************/
-        div.shapka {
-            display: flex;
-            height: 90px;
-            background: #ba0000;
-        }
-
-        div.shapka div.left {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        div.shapka div.center {
-            flex: 4;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        div.shapka div.right {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        div.shapka div.left a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /*******************center-block****************/
-        div.shapka div.center h1 {
-            margin-bottom: 10px;
-            color: white;
-            font-size: 32px;
-        }
-        div.shapka div.center p {
-            margin-top: 0;
-            color: white;
-        }
-
-        /**************right block************************/
-        div.shapka div.right button{
-            margin-left: 20px;
-            margin-right: 30px;
-            border: 3px solid white;
-            color: white;
-            cursor: pointer;
-            background: none;
-            padding: 10px 15px;
-            border-radius: 15px;
-        }
-
-        div.shapka div.right a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /*****************nav-bottom*********************/
-        div.nav-2 {
-            margin-top: 13px;
-        }
-        div.nav-2 ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 12px auto;
-            text-align: center;
-        }
-        div.nav-2 ul li {
-            display: inline-block;
-        }
-        div.nav-2 ul li a {
-            text-decoration: none;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: 15px;
-        }
-
-
-
-
-    </style>
+    <link rel="stylesheet" href="style2.css" type="text/css">
 </head>
+
 <body>
     <div class="nav-1">
         <ul>
@@ -123,7 +22,7 @@
             <li><a href="/">Доступ</a></li>
             <li><a href="/">Правда SOS</a></li>
         </ul>
-    </div>  
+    </div>
 
     <div class="shapka">
         <div class="left">
@@ -154,5 +53,55 @@
             <li><a href="/">Архів</a></li>
         </ul>
     </div>
+    <section class="news">
+        <div class="news1">
+            <div class="photo">
+                <img src="img/photo1.png" alt="Фото нардепа">
+            </div>
+            <div class="zag">
+                <h2>Екснардеп, який сидів за вбивство,<br> виграв вибори - ВВС</h2>
+                <p>
+                    Екснардеп Верховної Ради Віктор Лозинський, якого засуджували до 15 років вязниці, переміг у виборах
+                    обєднаної територіальної громади<br> поруч з місцем вбивства у Кіровоградській області
+                </p>
+            </div>
+        </div>
+        <div class="news2">
+            <div class="new1">
+                <h3>У МВС назвали найбрудніший регіон на виборах</h3>
+            </div>
+            <div class="new1">
+                <h3>
+                    На Полтавщині створили "фейкову" виборчу дільницю: тепер буде покарання
+                </h3>
+            </div>
+            <div class="new1">
+                <h3>
+                    У підкупі виборців підозрюють спостерігача ексмера Києва Омельченка - джерело
+                </h3>
+            </div>
+            <div class="new1">
+                <h3>
+                    У Львівську міськраду проходять 5 партій, серед яких немає "Слуги народу" - ЗМІ
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section class="next-news">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <div class="photo1">
+                <img src="img/Photo2.png" alt="">
+            </div>
+            <div class="text">
+                <h3>
+                    За кулісами "5 питань від президента". Розповідь волонтера про опитування Зеленського
+                </h3>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
