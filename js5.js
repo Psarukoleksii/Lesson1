@@ -35,6 +35,40 @@
 
 
 
+// -  Створити функцію конструктор для об'єкту який описує теги
+// Властивості
+// -назва тегу
+// - опис його дій
+// - масив з атрибутами (2-3 атрибути максимум)
+// Кожен атрибут описати як окремий який буде містити
+// -назву атрибуту
+// -опис дії атрибуту
+// інформацію брати з htmlbook.ru
+
+// function Tags(name, whatDo, nameAtr, whatDo1, nameAtr2 = null, whatDo2 = null){
+//     this.name = name;
+//     this.whatDo = whatDo;
+//     this.atributs = this.atributs = [{titleAtr: nameAtr, wthDo: whatDo1}, {titleAtr: nameAtr2, wthDo: whatDo2}]
+// }
+
+// let link = new Tags('ссилка', 'Переходить на іншу сторінку', 'href', 'дає адресу куди переходити', 'title','підказка')
+// console.log(link);
+
+// let div = new tags('блок', 'створює окремий блок для інформації', 'align', 'Вирівнювання', 'title', 'Вспливаюча підказка')
+// console.log(div);
+
+// let h1 = new tags('заголовок першого рівня', 'створює найголовніший заголовок', 'align','Вирівнювання заголовку');
+// console.log(h1)
+
+// let span = new tags('спан', 'оприділяє строчні елементи','style','задає стиль елементу');
+// console.log(span);
+
+// let input = new tags('інпут', 'створює деякі елементи інтерфейсу','submit','утворює кнопку');
+// console.log(input);
+
+// let form = new tags('форм', 'встановлює форму на веб-сторінці','medhod','метод протоколу даних', 'action', 'документ, який обробляє форму');
+// console.log(form);
+
 
 
 
