@@ -57,9 +57,8 @@
 
 // let result;
 // function func(arr){
-//     for(let elem of arr){
-//         result = Math.min(elem);
-//     }
+//         result = Math.min.apply(null,arr)
+    
 //     return result;
 // }
 // console.log(func([6,7,1,3,5]));
@@ -87,11 +86,16 @@
 // console.log(func([1,2,3,4]));
 
 // - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
-
+// let sum = 0;
 // function func(arr){
-//     return arr.length;
+//     for(let elem of arr){
+//         if(typeof(elem) === 'object'){
+//             sum++;
+//         }
+//     }
+//     return sum
 // }
-// console.log(func([{name: 'oleksii'}, {secondName: 'psaruk'}, {old: 20}]));
+// console.log(func([{name: 'oleksii'}, {secondName: 'psaruk'}, {old: 20}, 2, 'oleksii', 5, 'owu']));
 
 // - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
 // let result;
@@ -110,17 +114,13 @@
 // - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
 
 // function func(arr1, arr2){
-//     let arr3 = [];
-//     let sum = 0
-//     for(let i = 0; i < arr1.length; i++){
-//         for(let j = 0; i < arr2.length; j++){
-//             if(i = j){
-//                 sum = arr1[i] + arr2[j];
-//                 arr3.push(sum);
-//             }
-//         }
-//     }
-//     return arr3;
+// let sum = 0;
+// let arr3 = [];
+// for(let i = 0; i < arr1.length; i++){
+//     sum = arr1[i] + arr2[i];
+//     arr3.push(sum);
+// }
+// return arr3;
 // }
 // console.log(func([1,2,3,4], [5,6,7,8]));
 
