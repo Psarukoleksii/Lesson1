@@ -115,6 +115,46 @@
 // let driver = new Car({name: 'andrii', old: 25, expr: '5 years'});
 // console.log(driver);
 
+// *************************************************************************************************
+
+// - Створити об'єкт car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+// -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
+// -- info () - яка виводить всю інформацію про автомобіль
+// -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+// -- changeYear (newValue) - змінює рік випуску на значення newValue
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+
+// let Car = {
+//     model: 'audi',
+//     old: 2010,
+//     producer: 'germany',
+//     maxSpeed: 200,
+//     volume: 3,
+
+//     drive: function(){
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
+//     },
+//     info: function(){
+//         console.log(Car);
+//     },
+//     increaseMaxSpeed: function(){
+//         console.log(this.maxSpeed + 30);
+//     },
+//     changeYear: function(){
+//         console.log(`новий рік випуску: ${this.old + 30}`);
+//     },
+//     addDriver: function(){
+//         console.log({name: 'andrii', old: 25, expr: '5 years'})
+//     }
+// }
+
+// Car.drive();
+// Car.info();
+// Car.increaseMaxSpeed();
+// Car.changeYear();
+// Car.addDriver();
+
+
 
 // ==============================================
 // -створити класс попелюшка з полями ім'я, вік, розмір ноги
