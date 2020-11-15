@@ -42,21 +42,30 @@
 //     {title : 'lorem', body:'lorem ipsum dolo sit ameti4'},
 //     {title : 'lorem', body:'lorem ipsum dolo sit ameti5'},
 // ];
-//
+
 // for(let elem of elems){
 //     let div = document.createElement('div');
-//     div.innerHTML = `${elem.title}  ${elem.body}`;
+//     // div.innerHTML = `${elem.title}  ${elem.body}`;
+//     let p1 = document.createElement('p');
+//     let p2 = document.createElement('p');
+//     p1.innerHTML = `${elem.title}`;
+//     p2.innerHTML = `${elem.body}`;
+//     div.appendChild(p1);
+//     div.appendChild(p2);
 //     div.style.backgroundColor = 'darkolivegreen';
 //     div.style.margin = '30px';
 //     div.style.color = 'white';
 //     div.style.padding = '20px';
 //     body.appendChild(div);
+
+
 //     let button = document.createElement('button');
-//     button.setAttribute('value', 'click');
-//     button.style.padding = '10px';
-//     button.addEventListener('click', () => {
-//         div.style.display = 'none';
+//     button.style.padding = '20px';
+//     button.addEventListener('click', function(){
+//         p2.style.display = 'none';
 //     })
+
+
 //     div.appendChild(button);
 // }
 
