@@ -261,40 +261,98 @@
 //     {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
 //     {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
 // ];
-//
+
 // let div = document.querySelector('#text');
-//
+// let p = document.createElement('p');
 // let elem1 = document.querySelector('#check1');
 // let elem2 = document.querySelector('#check2');
 // let elem3 = document.querySelector('#check3');
 // let user;
 // elem1.addEventListener('click', function (){
+//     p.innerText = '';
 //     user = usersWithAddress.filter(function (elem){
-//         if(elem.status === false) {
-//             let p = document.createElement('p');
-//             p.innerText = `${elem.name} ${elem.age} ${elem.status} ${elem.address.city} ${elem.address.street}`
+//         if(elem1.checked === true){
+//             if(elem.status === false) {
+//             p.innerHTML += `${elem.name} ${elem.age} ${elem.status} ${elem.address.city} ${elem.address.street}<br>`
 //             div.appendChild(p);
 //         }
+//         } if (elem1.checked === false){
+//             p.innerHTML = '';
+//         }
+        
 //     })
 // })
 // elem2.addEventListener('click', function (){
+//     p.innerText = '';
 //     user = usersWithAddress.filter(function (elem){
-//         if(elem.age >= 29){
-//             let p = document.createElement('p');
-//             p.innerText = `${elem.name} ${elem.age} ${elem.status} ${elem.address.city} ${elem.address.street}`
+//          if(elem2.cheked === true && elem1.cheked === true{}
+//         if(elem2.checked === true){
+//             if(elem.age >= 29) {
+//             p.innerHTML += `${elem.name} ${elem.age} ${elem.status} ${elem.address.city} ${elem.address.street}<br>`
 //             div.appendChild(p);
 //         }
-//     })
-// })
-// elem3.addEventListener('click', function (){
-//     user = usersWithAddress.filter(function (elem){
-//         if(elem.address.city === 'Kyiv'){
-//             let p = document.createElement('p');
-//             p.innerText = `${elem.name} ${elem.age} ${elem.status} ${elem.address.city} ${elem.address.street}`
-//             div.appendChild(p);
+//         } if (elem2.checked === false){
+//             p.innerHTML = '';
 //         }
 //     })
 // })
 
+
+// elem3.addEventListener('click', function (){        
+//     p.innerText = '';
+//     user = usersWithAddress.filter(function (elem){
+//         if(elem3.checked === true){
+//                     if(elem.address.city == 'Kyiv'){
+//             p.innerHTML += `${elem.name} ${elem.age} ${elem.status} ${elem.address.city} ${elem.address.street} <br>`
+//             div.appendChild(p);
+//         }
+//         } if(elem3.checked === false){
+//             p.innerHTML = '';
+//         }
+
+//     })
+// })
+
+// **********************************************************
+
+// Завдання курусель. Щоб по кліку на кнопки змінювалась картинка
+
+
+// let button1 = document.querySelector('#button1');
+// let button2 = document.querySelector('#button2');
+
+// let arr = [
+//     'img/photo1.jpg',
+//     'img/photo2.jpg',
+//     'img/photo3.jpg',
+//     'img/photo4.jpg',
+//     'img/photo5.jpg',
+//     'img/photo6.jpg',
+//     'img/photo7.jpg',
+//     'img/photo8.jpg',
+// ];
+// let i = 0;
+
+// button1.addEventListener('click', function(){
+//     if(i > 6) i = 0;
+//     let c = arr[i];
+//     let photo = document.querySelector('#photo');
+//     photo.innerHTML = `<img src = '${c}' alt = ""> `;
+//     i++;
+// })
+
+
+// **********************************************************
+
+// *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+
+// let text = document.querySelector('#text');
+
+// text.addEventListener('click', function(){
+//     let str = getSelection().toString();
+//     let inner = this.innerHTML;
+//     let bold = '<i>' + str + '</i>';
+//     this.innerHTML = inner.replace(str, bold);
+// })
 
 
