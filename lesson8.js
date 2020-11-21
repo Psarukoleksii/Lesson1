@@ -4,11 +4,11 @@
 
 // let elem = document.querySelector('#elem1');
 
-// function hi(){
-//     elem.innerHTML = 'Hello world'
-// }
+// elem.value = localStorage.getItem('text');
 
-// setTimeout(hi, 3000);
+// elem.oninput = () => {
+//     localStorage.setItem('text', elem.value)
+// }
 
 
 // **********************************************************************************
@@ -84,23 +84,23 @@
 // let elem = document.querySelector('#elem');
 // let button1 = document.querySelector('#button1');
 // let button2 = document.querySelector('#button2');
-
+//
 // let i = 1;
-
-
+//
+//
 // button.addEventListener('click', function(){
 //     localStorage.setItem(`elem ${i}`, elem.value);
 //     i++
 //     elem.value = '';
 // })
-
+//
 // button2.addEventListener('click', function(){
 //     i--;
 //     if( i < 1) {
 //     i = localStorage.length}
-//     elem.value = localStorage.getItem(`elem ${i}`); 
+//     elem.value = localStorage.getItem(`elem ${i}`);
 // })
-
+//
 // button1.addEventListener('click', function(){
 //     i++;
 //     if( i > localStorage.length) {
@@ -108,7 +108,11 @@
 //     elem.value = localStorage.getItem(`elem ${i}`);
 // })
 
+
+
 // *****************************************************************
+
+
 
 // - Реализуйте записную книгу, хранящую данные в локальном хранилище.
 // Данные которые надо сохранять : ФИО, номер, почта, фирма, отдел, день рождения
@@ -118,6 +122,66 @@
 // которые уже заполнены данными объекта
 
 
+// let elem1 = document.form.FIO;
+// let elem2 = document.form.tel;
+// let elem3 = document.form.email;
+// let elem4 = document.form.firma;
+// let elem5 = document.form.otdel;
+// let elem6 = document.form.HB;
+// let button = document.querySelector('#button');
+
+
+
+// button.addEventListener('click', function(){
+//     let arr = JSON.parse(localStorage.getItem('person'))||[];
+//     let obj = {
+//     name: elem1.value,
+//     phone: elem2.value,
+//     email: elem3.value,
+//     firm: elem4.value,
+//     otdel: elem5.value,
+//     birthday: elem6.value,
+// }
+//     arr.push(obj);
+//     localStorage.setItem(`person`, JSON.stringify(arr));
+
+// })
+
+// const userDiv =document.getElementById('users')
+// function showUsers(){
+//    const  users =JSON.parse(localStorage.getItem('person'))||[]
+//    console.log(users)
+  
+//    users.forEach((element, index) => {
+//     let button2 = document.createElement('button');
+//     button2.innerHTML = 'delete';
+//     button2.style.padding = '20px';
+//     button2.addEventListener('click', function(){
+//         // div.style.display = 'none';
+//         users.splice(index, 1)
+//         localStorage.setItem('person', JSON.stringify(users))
+//         userDiv.innerHTML = null
+//         showUsers();
+//     })
+//     let button3 = document.createElement('button');
+//     button3.innerHTML = 'edit';
+//     button3.style.padding = '20px';
+//     button3.style.marginLeft = '10px';
+//     button3.addEventListener('click', function(){
+
+//     })
+//        let div = document.createElement('div');
+//     let p = document.createElement('p');
+//     p.innerHTML = JSON.stringify(element);
+//     div.appendChild(p);
+//     div.appendChild(button2);
+//     div.appendChild(button3)
+    
+//     userDiv.appendChild(div);
+//     document.body.appendChild(userDiv)
+//    });
+// }
+// showUsers()
 
 
 
